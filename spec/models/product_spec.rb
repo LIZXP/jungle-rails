@@ -32,5 +32,11 @@ RSpec.describe Product, type: :model do
       @product.save
       expect(@product.errors.full_messages).to eq([])
     end
+    it "validate name" do
+      @category = Category.new(name: "testCategory")
+      @product = Product.new(price: "100", quantity: "20", category: @category)
+      @product.save
+      expect(@product.errors.full_messages).to include("Name can't be blank")
+    end
   end
 end
