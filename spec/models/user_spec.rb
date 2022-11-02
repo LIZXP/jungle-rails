@@ -8,6 +8,16 @@ RSpec.describe User, type: :model do
       @user.save!
       expect(@user).to be_present
     end
+    it "should not save without matching passwords" do
+      @user = User.new(name: "Peter", email: "test@test.com", password: "111111", password_confirmation: "111123")
+      @user.save
+      expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
+    end
+    it "should not save with password = nil" do
+      @user = User.new(name: "Peter", email: "test@test.com", password: nil, password_confirmation: "111111")
+      @user.save
+      expect(@user.errors.full_messages).to include("Password can't be blank")
+    end
   end
 
   describe '.authenticate_with_credentials' do
