@@ -13,10 +13,17 @@ RSpec.describe User, type: :model do
       @user.save
       expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
     end
-    it "should not save with password = nil" do
+    it "should not save if password = nil" do
       @user = User.new(name: "Peter", email: "test@test.com", password: nil, password_confirmation: "111111")
       @user.save
       expect(@user.errors.full_messages).to include("Password can't be blank")
+    end
+    it "test if email thats case sensitive" do
+      @user1 = User.new(name: "Peter", email: "test@test.com", password: "111111", password_confirmation: "111111")
+      @user2 = User.new(name: "Peter", email: "TEST@test.com", password: "111111", password_confirmation: "111111")
+      @user1.save
+      @user2.save
+      expect(@user2.id).not_to be_present
     end
   end
 
