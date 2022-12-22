@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Having a tough time finding unique products that you can show off to your friends? Welcome to the Jungle. Where weird is the new normal. An e-commerce application built with Rails 6.1, using idiomatic Ruby and Rails practices. This app uses HTML, SCSS and JS on the front-end; Ruby on Rails and PostgreSQL on the back-end.
 
 ## Setup
 
@@ -12,6 +12,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
+9. More information in their docs: https://stripe.com/docs/testing#cards
 
 ## Database
 
@@ -29,3 +30,16 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Admin Privileges
+Authenticated admins can add/edit/delete products and categories.
+
+Product Selection
+Users can browse and add products to cart directly from the home page.
+
+Products can also be seen in their individual pages, or under their respective categories.
+
+Checkout
+Users can complete their purchase using Stripe, and see the details of their order.
+
+---------------------------------------------------------------------------------------
