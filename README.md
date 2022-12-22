@@ -2,6 +2,13 @@
 
 Having a tough time finding unique products that you can show off to your friends? Welcome to the Jungle. Where weird is the new normal. An e-commerce application built with Rails 6.1, using idiomatic Ruby and Rails practices. This app uses HTML, SCSS and JS on the front-end; Ruby on Rails and PostgreSQL on the back-end.
 
+## Page Demos
+
+!["main page"](https://github.com/LIZXP/scheduler/blob/master/docs/1.PNG)
+!["add new appointment"](https://github.com/LIZXP/scheduler/blob/master/docs/2.PNG)
+!["each day"](https://github.com/LIZXP/scheduler/blob/master/docs/3.PNG)
+!["delete appointment"](https://github.com/LIZXP/scheduler/blob/master/docs/4.PNG)
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -11,8 +18,7 @@ Having a tough time finding unique products that you can show off to your friend
 5. Create .env file based on .env.example
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server
-9. More information in their docs: https://stripe.com/docs/testing#cards
+8. Run `bin/rails s -b 0.0.0.0` to start the server. The app will be served at http://localhost:3000
 
 ## Database
 
