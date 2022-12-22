@@ -4,10 +4,9 @@ Having a tough time finding unique products that you can show off to your friend
 
 ## Page Demos
 
-!["main page"](https://github.com/LIZXP/scheduler/blob/master/docs/1.PNG)
-!["add new appointment"](https://github.com/LIZXP/scheduler/blob/master/docs/2.PNG)
-!["each day"](https://github.com/LIZXP/scheduler/blob/master/docs/3.PNG)
-!["delete appointment"](https://github.com/LIZXP/scheduler/blob/master/docs/4.PNG)
+!["Main page"](https://github.com/LIZXP/jungle-rails/blob/master/app/assets/project/1.JPG)
+!["Product"](https://github.com/LIZXP/jungle-rails/blob/master/app/assets/project/2.JPG)
+!["Shopping Cart"](https://github.com/LIZXP/jungle-rails/blob/master/app/assets/project/3.JPG)
 
 ## Setup
 
